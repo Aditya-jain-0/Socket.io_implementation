@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="script.js"></script>
+    <style>
+         body{
+            margin:0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 70vh;
+            width: 90%;
+            max-width: 1200px;
+         }
+         #message-container{
+            border: 1px solid black;
+            flex-grow: 1;
+            overflow-y: auto;
+         }
+         #message-container div{
+            background-color: #CCC;
+            padding: 5px;
+         }
+         .message_ele .room_ele{
+            padding:5px;
+         }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="message-container"></div><br/>
+    <form id="form">
+        <div class="message_ele">
+        <label for="message-input">Message</label>
+        <input type="text" id="message-input">
+        <button type="submit" id="send-button">Send</button></div><br/>
+        <div class="room_ele">
+        <label for="room-input">Room</label>
+        <input type="text" id="room-input">
+        <button type="submit" id="room-button">Join</button></div>
+    </form>
+</body>
+</html>
